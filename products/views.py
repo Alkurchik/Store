@@ -7,6 +7,7 @@ from django.core.paginator import Paginator
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 
+
 # Представление СBV
 class IndexView(TemplateView):
     template_name = 'products/index.html'
