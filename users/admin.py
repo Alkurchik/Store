@@ -6,14 +6,14 @@ from products.admin import BasketAdmin
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'email', 'is_active')
+    list_display = ('username', 'email', 'is_active',)
     inlines = (BasketAdmin,)
-    search_fields = ('username', 'email')
+    search_fields = ('username', 'email',)
 
 
 @admin.register(EmailVerification)
 class EmailVerificationAdmin(admin.ModelAdmin):
-    list_display = ('code', 'user', 'expiration')
-    fields = ('code', 'user', 'expiration', 'created')
+    list_display = ('code', 'user', 'expiration',)
+    fields = ('code', 'user', 'expiration', 'created',)
     readonly_fields = ('created',)
-    search_fields = ('user', 'code')
+    search_fields = ('user', 'code',)
