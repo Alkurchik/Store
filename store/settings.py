@@ -181,7 +181,7 @@ LOGOUT_REDIRECT_URL = '/'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'kurchik.sasha@yandex.by'
-EMAIL_HOST_PASSWORD = 'P9jPdbuSYbTo#57'
+EMAIL_HOST_PASSWORD = 'P9j1PdbuSYbTo#57'
 EMAIL_USE_SSL = True
 
 # OAuth
