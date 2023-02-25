@@ -5,7 +5,6 @@ from django.views.generic.list import ListView
 
 from common.views import TitleMixin
 from products.models import Basket, Product, ProductCategory
-from django.core.cache import cache
 
 
 # Представление СBV
@@ -50,7 +49,6 @@ class ProductsListView(TitleMixin, ListView):
         context = super(ProductsListView, self).get_context_data()
         context['categories'] = ProductCategory.objects.all()
         return context
-
 
 
 # def products(request, category_id=None, page_number=1):
