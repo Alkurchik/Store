@@ -38,7 +38,8 @@ env = environ.Env(
     EMAIL_USE_SSL=(bool),
 
     STRIPE_PUBLIC_KEY=(str),
-    STRIPE_SECRET_KEY=(str)
+    STRIPE_SECRET_KEY=(str),
+    STRIPE_WEBHOOK_SECRET=(str),
 )
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -248,3 +249,4 @@ CELERY_RESULT_BACKEND = f'redis://{REDIS_HOST}:{REDIS_PORT}'
 
 STRIPE_PUBLIC_KEY = env('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY')
+STRIPE_WEBHOOK_SECRET = env('STRIPE_WEBHOOK_SECRET')
