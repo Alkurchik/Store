@@ -1,0 +1,13 @@
+1) На странице авторизации не верный тайтл
+2) Не подтвержденный email может авторизовываться
+3)
+
+Испльзованные сервисы:
+
+Django
+PostgreSQL
+Redis
+Celery
+Stripe
+stripe listen --forward-to 127.0.0.1:8000/webhook/stripe/
+
